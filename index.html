@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Escape Room!</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="room">
-       <img id="door" src="images/EscapeRoom_door.png">
-       <img id="lock" src="images/EscapeRoom_lock.png">
-       <img id="knob" src="images/EscapeRoom_knob.png">
-       <img id="key" src="images/EscapeRoom_key.png">
+       <img id="door" onclick="tryDoor()" src="images/EscapeRoom_door.png">
+       <img id="lock" onclick="tryLock()" src="images/EscapeRoom_lock.png">
+       <img id="knob" onclick="tryKnob()" src="images/EscapeRoom_knob.png">
+       <img id="key" onclick="pickUpKey()" src="images/EscapeRoom_key.png">
+       <button id="escapeBtn" onclick="escape()">Get Out of Here!</button>
     </div>
 </body>
 </html>
