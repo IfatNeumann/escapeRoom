@@ -9,11 +9,39 @@ body {
 #room {
     margin: 0;
     padding: 0;
-    
-    /* vw = view width, vh = view height */
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
+    width: 1536px;
+    height: 721px;
+    background-image: url("images/EscapeRoom_room.png");
+}
+
+#room > * {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#door {
+    top: 201px;
+    left: 280px;
+}
+
+#lock {
+    top: 310px;
+    left: 543px;
+    width: 50px;
+}
+
+#knob {
+    top: 400px;
+    left: 550px;
+    width: 40px;
+}
+
+#key {
+    top: 650px;
+    left: 1200px;
+    width: 20px;
+    transform: rotate(80deg);
 }
 
 p {
